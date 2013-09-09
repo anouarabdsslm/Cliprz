@@ -1,0 +1,21 @@
+{
+    "name": "Cliprz/Cliprz",
+    "type": "library",
+    "description": "The Cliprz framework",
+    "keywords": ["framework","Cliprz","MVC","HMVC"],
+    "homepage": "http://www.cliprz.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cliprz Development Team",
+            "email": "cliprz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "config": {
+        "vendor-dir": "lib/Vendor"
+    },
+    "minimum-stability": "dev"
+}
