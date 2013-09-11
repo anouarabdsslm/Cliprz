@@ -22,7 +22,7 @@ Dwonload
 Developers [A to Z]
 -------------------
 * [Amer Alrdadi](https://github.com/ameralrdadi) <private>
-* [Albert Negix](https://github.com/Negix) <a.negix@outlook.com>
+* [Albert Negix](https://github.com/Negix) <negix@outlook.com>
 * [Yousef Ismaeil](https://github.com/Cliprz) <cliprz@gmail.com>
 
 Join Developers team

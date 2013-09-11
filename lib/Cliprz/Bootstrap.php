@@ -7,18 +7,21 @@
  *
  * @package    Cliprz
  * @author     Yousef Ismaeil <cliprz@gmail.com>
- * @author     Albert Negix <a.negix@outlook.com>
+ * @author     Albert Negix <negix@outlook.com>
  * @copyright  Copyright (c) 2013 - 2014, Cliprz Developers team
  * @license    MIT
  * @link       http://www.cliprz.org
  * @version    1.0.0
  */
 
-// Activates the circular reference collector
-if (!gc_enabled()) { gc_enable(); }
+// Report all PHP errors
+error_reporting(-1);
 
 // logs the errors
-#ini_set('log_errors', 'On');
+ini_set('log_errors', 'On');
+
+// Activates the circular reference collector
+if (!gc_enabled()) { gc_enable(); }
 
 // Cliprz framework charset and encoding must be UTF-8
 defined('CHARSET') or define ('CHARSET','UTF-8',true);
@@ -43,3 +46,15 @@ include (CLIPRZPATH.'Common.php');
 
 \Cliprz\on_beta();
 
+// Call Cliprz\Loader\Autoload file
+include (CLIPRZPATH.'Loader'.DIRECTORY_SEPARATOR.'Autoload.php');
+// Call our loader
+include (CLIPRZPATH.'Loader'.DIRECTORY_SEPARATOR.'Loader.php');
+// Use Cliprz\Loader\Autoload
+use Cliprz\Loader\Autoload;
+// Install our autoload in SPL stack
+Autoload::register();
+
+
+// Uninstall our autoload from SPL stack
+Autoload::unRegister();
