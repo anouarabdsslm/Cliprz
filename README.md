@@ -21,7 +21,7 @@ Dwonload
 
 Developers [A to Z]
 -------------------
-* [Amer Alrdadi](https://github.com/ameralrdadi) <private>
+* [Amer Alrdadi](https://github.com/ameralrdadi)
 * [Albert Negix](https://github.com/Negix) <negix@outlook.com>
 * [Yousef Ismaeil](https://github.com/Cliprz) <cliprz@gmail.com>
 

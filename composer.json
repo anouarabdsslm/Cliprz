@@ -2,7 +2,7 @@
     "name": "cliprz/cliprz",
     "type": "library",
     "description": "The Cliprz framework",
-    "keywords": ["framework","Cliprz","MVC","HMVC"],
+    "keywords": ["framework","cliprz","mvc","hmvc"],
     "homepage": "http://www.cliprz.org",
     "license": "MIT",
     "authors": [
@@ -12,10 +12,11 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "phpunit/phpunit": "3.8.*@dev"
     },
     "config": {
-        "vendor-dir": "lib/Vendor"
+        "vendor-dir": "libraries/Vendor"
     },
     "minimum-stability": "dev"
 }

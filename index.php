@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Cliprz framework
- *
- * An open source application development framework for PHP 5.4.0 or newer
+ * Part of the Cliprz framework
  *
  * @package    Cliprz
  * @author     Yousef Ismaeil <cliprz@gmail.com>
@@ -21,7 +19,7 @@ if (version_compare(phpversion(),'5.4.0', "<"))
 defined('BASEPATH') or define('BASEPATH',realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
 
 // Set Bootstrap file path
-$__bootstrapPath = BASEPATH.'lib'.DIRECTORY_SEPARATOR
+$__bootstrapPath = BASEPATH.'libraries'.DIRECTORY_SEPARATOR
     .'Cliprz'.DIRECTORY_SEPARATOR.'Bootstrap.php';
 
 // Call the bootstrap our exit project if not exists
