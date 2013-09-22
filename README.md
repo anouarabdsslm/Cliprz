@@ -2,6 +2,10 @@ Cliprz framework
 ================
 An open source application development framework for PHP 5.4.0 or newer.
 
+NOTE
+====
+This version is not complete only for Development team, we are trying to finish up Cliprz framework soon ,You can join us and (add|update|edit|delete) things, We start programming this Framework on 9\9\2013
+
 Version 1.0.0
 -------------
 We starting programming this framework from 9/9/2013 under some standard rules :
@@ -14,7 +18,7 @@ Composer
 --------
 We use [Composer](http://getcomposer.org/) to support PHP packages.
 
-Dwonload
+Download
 --------
 * [Download the latest release](https://github.com/Cliprz/Cliprz/archive/master.zip).
 * Clone the repo: `git clone git://github.com/Cliprz/Cliprz.git`.
