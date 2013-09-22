@@ -75,5 +75,10 @@ try {
     echo $e->getMessage();
 }
 
+// Test compiling
+use Cliprz\MVC\View\Engines\Compiler\Compiler;
+$c = new Compiler();
+$c->save(APPPATH.'Cache/compile.php');
+
 // un register Cliprz\Loader\Autoload from SPL stack
 Autoload::unRegister();

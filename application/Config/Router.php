@@ -1,9 +1,16 @@
 <?php
 
+/**
+ * Routing URLs file
+ */
+
+// Use Router class
 use Cliprz\Router\Router;
 
+// Your home page
 Router::index('welcome');
 
+// Add a rule
 Router::rule([
     'regex' => 'welcome',
     'class' => 'Welcome'

@@ -13,7 +13,19 @@
 
 namespace Cliprz\MVC\View;
 
+use Cliprz\MVC\View\Engines\PHPEngine;
+use Cliprz\MVC\View\Engines\TemplateEngine;
+use Cliprz\MVC\View\Engines\Exceptions\InvalidViewFileName;
+
 class View {
+
+    /**
+     * View engine class
+     *
+     * @var object
+     * @static
+     */
+    public static $engine;
 
     /**
      * Display a file from Views
@@ -23,15 +35,14 @@ class View {
      * @access public
      */
     public static function display ($filename,$data=null) {
-        $pathToViewFile = APPPATH.'Views/'.trim($filename,'/').'.php';
-        if (is_file($pathToViewFile)) {
-            if (is_array($data)) {
-                extract($data);
-            }
-            include ($pathToViewFile);
-        } else {
-            throw new \Exception($pathToViewFile.' not exists.');
+        $prepareFile = APPPATH.'Views/'.trim($filename,'/');
+        static::$engine = new PHPEngine();
+        try {
+            static::$engine->getFile($prepareFile,$data);
+        } catch (InvalidViewFileName $e) {
+            echo $e->getMessage();
         }
+
     }
 
 }
