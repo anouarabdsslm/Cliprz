@@ -6,9 +6,9 @@ NOTE
 ====
 This version is not complete only for Development team, we are trying to finish up Cliprz framework soon ,You can join us and (add|update|edit|delete) things, We start programming this Framework on 9\9\2013
 
-Version 1.0.0
--------------
-We starting programming this framework from 9/9/2013 under some standard rules :
+Version 1.0.0 Development
+-------------------------
+This framework programming under some standard rules :
 
 * [PSR](http://www.php-fig.org/) (Proposing a Standards Recommendation)
 * Design Pattrens
