@@ -11,7 +11,7 @@ Version 1.0.0 Development
 This framework programming under some standard rules :
 
 * [PSR](http://www.php-fig.org/) (Proposing a Standards Recommendation)
-* Design Pattrens
+* Design Patterns
 * [ORM](http://en.wikipedia.org/wiki/Object-relational_mapping)
 
 Composer
