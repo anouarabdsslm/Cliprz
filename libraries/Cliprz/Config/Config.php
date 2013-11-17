@@ -21,7 +21,7 @@ class Config {
      * @access private
      * @static
      */
-    private static $config = [];
+    private static $config = array();
 
 }
 
